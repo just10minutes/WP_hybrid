@@ -1,0 +1,45 @@
+[
+    {
+        "type": "internal",
+        "trans": "HOME",
+        "page": "customHome",
+        "icon": "home",
+        "navRoot": true
+    },
+    {
+        "type": "internal",
+        "trans": "Recipes",
+        "page": "posts",
+        "icon": "albums",
+        "navRoot": true
+    },
+    {
+        "type": "external",
+        "trans": "Shop",
+        "href": "https://julienrenaux.fr",
+        "icon": "cart"
+    },
+    {   "type": "internal",
+        "trans": "Categories",
+        "page": "categories",
+        "icon": "folder",
+        "navRoot": true
+    },
+    {
+        "type": "internal",
+        "trans": "Tags",
+        "page": "tags",
+        "icon": "pricetags",
+        "navRoot": true
+    },{
+        "type": "internal",
+        "trans": "BOOKMARKS",
+        "page": "bookmarks",
+        "params": {},
+        "icon": "bookmarks",
+        "navRoot": true
+    }
+
+    
+    
+]

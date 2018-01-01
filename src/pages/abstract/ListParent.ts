@@ -26,12 +26,15 @@ export class ListParent {
     showSpinner$: Observable<boolean>;
     store$: Observable<any>;
     stream$: Observable<any>;
+    stream1$: Observable<any>;
+    store1$: Observable<any>;
     itemsToDisplay$: Observable<number>;
     isPaginationEnabled$: Observable<boolean>;
     hasError$: Observable<boolean>;
     currentPage$ = new BehaviorSubject<number>(0);
     type: string;
     store: Store<AppState>;
+    store1: Store<AppState>;
 
     @ViewChild(InfiniteScroll) infinite: InfiniteScroll;
 
@@ -53,6 +56,9 @@ export class ListParent {
     setHasErrorStream = (hasError: Observable<boolean>) => this.hasError$ = hasError;
     setItemsToDisplayStream = (itemsToDisplay: Observable<number>) => this.itemsToDisplay$ = itemsToDisplay;
     setIsPaginationEnableStream = (isPaginationEnabled: Observable<boolean>) => this.isPaginationEnabled$ = isPaginationEnabled;
+    setStream1 = (stream1: Observable<any>) => this.stream1$ = stream1;
+    setStoreStream1 = (store1: Observable<any>) => this.store1$ = store1;
+
 
     public getSyncPropFromStore(property: string, otherwise: any): any {
         let prop;
